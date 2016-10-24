@@ -35,20 +35,6 @@ function goForward(distance) {
 
 }
 
-function insertLine(origin, angle, magnitude) {
-  var line = $("<div class='line'></div>");
-  console.log("rotate", "rotate(" + angle + "deg)") 
-  line.css({
-    left: origin.x + _turtle.width() / 2,    
-    bottom: origin.y + _turtle.height() / 2,
-    width: magnitude,
-    transform: "rotate(" + angle + "deg)",
-    "transform-origin": "top left"
-  })
-
-  $("#turtle-cage").append(line);
-  console.log($("#turtle-cage"))
-}
 
 function animateRotate(angle, element) {    
   // we use a pseudo object for the animation
