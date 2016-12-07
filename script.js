@@ -22,6 +22,12 @@ $("#text").keydown(function(keyDown) {
       turnLeft()
       goForward(100);
     }
-    else if (isPentagon
+    else if (isPentagon > 0) {
+      goForward(300);
+      turn45Left();
+      goForward(100);
+      turn45Left();
+      goForward(100);
+    }
   }
 })
