@@ -14,5 +14,6 @@
 }
 
 #mcqeen {
-  margin-left: -1190px;
+  position: relative;
+  left: -1190px;
 }

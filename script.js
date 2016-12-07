@@ -44,5 +44,5 @@ $("#text").keydown(function(keyDown) {
 
 $("#button").click(function() {
   console.log("hi")
-  $("#mcqeen").animate({left: 0}, 1000)
+  $("#mcqeen").animate({left: -300}, 1000)
 })
