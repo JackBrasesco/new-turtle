@@ -43,5 +43,5 @@ $("#text").keydown(function(keyDown) {
 })
 
 $("#button").click(function() {
-  
+  $("#mcqeen").animate({left: "0px"}, 
 })
