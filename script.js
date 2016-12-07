@@ -1,3 +1,4 @@
 $("#text").keydown(function() {
-  var whatToDraw = $("#tex
+  var whatToDraw = $("#text").val()
+  var isSquare = whatToDraw.
 })
