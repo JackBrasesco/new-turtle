@@ -44,8 +44,8 @@ $("#text").keydown(function(keyDown) {
 
 $("#button").click(function() {
   console.log("hi")
-  $("#mcqeen").animate({left: -300}, 1000)
+  $("#mcqeen").animate({left: -300}, 1000);
   setTimeout(function() {
-    
-  }
+    turtle.animate({left: 10000}, 500);
+  }, 100)
 })
