@@ -12,6 +12,14 @@ $("#text").keydown(function(keyDown) {
       turnLeft()
       goForward(100)
     }
-    if (isRectangle
+    if (isRectangle > 0) {
+      goForward(300);
+      turnLeft()
+      goForward(100);
+      turnLeft()
+      goForward(200);
+      turnLeft()
+      goForward(100);
+    }
   }
 })
