@@ -2,7 +2,7 @@ $("#text").keydown(function(keyDown) {
   if (keyDown.keyCode == 13) {
     var whatToDraw = $("#text").val()
     var isSquare = whatToDraw.indexOf("square");
-    console.log(isSquare)
+    var isRectangle = whatToDraw.indexOf("rectangle");
     if (isSquare > 0) {
       goForward(300)
       turnLeft()
@@ -12,5 +12,6 @@ $("#text").keydown(function(keyDown) {
       turnLeft()
       goForward(100)
     }
+    if (isRectangle
   }
 })
