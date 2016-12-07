@@ -7,9 +7,15 @@ function turnRight() {
   heading = heading + 90  
 }
 
+function turn45Right() {
+  heading = heading + 45
+}
+
 function turnLeft() {
   heading = heading - 90  
 }
+
+function
 
 function goForward(distance) {    
   var radians = -1 * heading * (Math.PI/180);
