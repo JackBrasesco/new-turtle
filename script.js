@@ -43,5 +43,6 @@ $("#text").keydown(function(keyDown) {
 })
 
 $("#button").click(function() {
+  console.log("hi")
   $("#mcqeen").animate({left: "0px"}, 1000)
 })
