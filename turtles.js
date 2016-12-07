@@ -15,7 +15,9 @@ function turnLeft() {
   heading = heading - 90  
 }
 
-function
+function turn45Left() {
+  heading = heading - 45
+}
 
 function goForward(distance) {    
   var radians = -1 * heading * (Math.PI/180);
