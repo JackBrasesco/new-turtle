@@ -3,7 +3,7 @@ $("#text").keydown(function(keyDown) {
     var whatToDraw = $("#text").val()
     var isSquare = whatToDraw.indexOf("square");
     var isRectangle = whatToDraw.indexOf("rectangle");
-    var isOctogon = whatToDraw.indexOf("pentagon");
+    var isOctogon = whatToDraw.indexOf("octogon");
     if (isSquare > 0) {
       goForward(300)
       turnLeft()
@@ -22,8 +22,12 @@ $("#text").keydown(function(keyDown) {
       turnLeft()
       goForward(100);
     }
-    else if (isOcgon > 0) {
+    else if (isOctogon > 0) {
       goForward(300);
+      turn45Left();
+      goForward(100);
+      turn45Left();
+      goForward(100);
       turn45Left();
       goForward(100);
       turn45Left();
