@@ -43,7 +43,8 @@ $("#text").keydown(function(keyDown) {
 })
 
 $("#button").click(function() {
-  #
+  $(".a").html("KA CHOW!");
+  $(".a").css({color: "red"});
   console.log("hi")
   $("#mcqeen").animate({left: -300}, 1000);
   setTimeout(function() {
