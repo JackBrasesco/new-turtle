@@ -8,3 +8,7 @@
   height: 500px;
   position: relative;
 }
+
+#text {
+  width: 350px;
+}

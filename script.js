@@ -1,1 +1,0 @@
-goForward(100)
