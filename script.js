@@ -45,8 +45,7 @@ $("#text").keydown(function(keyDown) {
 $("#button").click(function() {
   $(".a").html("KA CHOW!");
   $(".a").css({color: "red"});
-  $("text").attr(value, "KA CHOW!!!")
-  console.log("hi")
+  $("text").attr("placeholder", "KA CHOW!!!")
   $("#mcqeen").animate({left: -300}, 1000);
   setTimeout(function() {
     turtle.animate({left: 10000}, 500);
