@@ -42,11 +42,9 @@ $("#text").keydown(function(keyDown) {
       goForward(100);
     }
     else if (isCircle > 0) {
-    for ( x < 360) {
+    for(x = 0; x < 360; x = x+1) {
       turn1Left()
-      goForward()
-      x = x+1
-      
+      goForward(1) 
     }
     }
   }
