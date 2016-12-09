@@ -11,8 +11,8 @@ function turn45Right() {
   heading = heading + 45
 }
 
-function turnLeft() {
-  heading = heading - 90  
+function turnLeft(degree) {
+  heading = heading - degree  
 }
 
 function turn45Left() {
