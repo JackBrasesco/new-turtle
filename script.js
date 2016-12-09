@@ -4,6 +4,7 @@ $("#text").keydown(function(keyDown) {
     var isSquare = whatToDraw.indexOf("square");
     var isRectangle = whatToDraw.indexOf("rectangle");
     var isOctogon = whatToDraw.indexOf("octogon");
+    var isCircle = whatToDraw.indexOf("circle");
     if (isSquare > 0) {
       goForward(300)
       turnLeft()
@@ -39,6 +40,9 @@ $("#text").keydown(function(keyDown) {
       turn45Left();
       goForward(100);
     }
+    else if (isCircle > 0) {
+      
+    }
   }
 })
 
@@ -49,6 +53,6 @@ $("#button").click(function() {
   $("#mcqeen").animate({left: 200}, 1000);
   setTimeout(function() {
     turtle.animate({left: 10000}, 500);
-    turtle.animate({bottom: 300}, 1000)
+    turtle.animate({top: -1000}, 100)
   }, 1000)
 })
