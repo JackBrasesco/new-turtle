@@ -41,6 +41,14 @@ $("#text").keydown(function(keyDown) {
       goForward(100);
     }
     else if (isCircle > 0) {
+      goForward(1)
+      turnLeft()
+      goForward(1)
+      turnLeft()
+      goForward(1)
+      turnLeft()
+      goForward(1)
+      turnLeft()
       
     }
   }

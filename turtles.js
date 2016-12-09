@@ -19,6 +19,10 @@ function turn45Left() {
   heading = heading - 45
 }
 
+function turn1Left() {
+  heading = heading - 1
+}
+
 function goForward(distance) {    
   var radians = -1 * heading * (Math.PI/180);
   var yIncrement = Math.sin(radians) * distance;
