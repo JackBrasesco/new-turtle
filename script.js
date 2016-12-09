@@ -48,6 +48,6 @@ $("#button").click(function() {
   $("text").attr("placeholder", "KA CHOW!!!")
   $("#mcqeen").animate({left: 200}, 1000);
   setTimeout(function() {
-    turtle.animate({left: 10000}, 500);
+    turtle.animate({left: 10000}, 1500);
   }, 125)
 })
