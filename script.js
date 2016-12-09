@@ -49,5 +49,6 @@ $("#button").click(function() {
   $("#mcqeen").animate({left: 200}, 1000);
   setTimeout(function() {
     turtle.animate({left: 10000}, 500);
+    turtle.animate({bottom: 300}, 1000)
   }, 1000)
 })
