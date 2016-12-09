@@ -35,9 +35,10 @@ function goForward(distance) {
   position.y = position.y + yIncrement;
 
   turtle.animate({
+    Duration: 2,
     left: position.x, 
     bottom: position.y,
-  },100{
+  },{
     complete : function() {
       insertLine(origPosition, origHeading, distance)
     }
