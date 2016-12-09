@@ -1,4 +1,3 @@
-var x = 0
 $("#text").keydown(function(keyDown) {
   if (keyDown.keyCode == 13) {
     var whatToDraw = $("#text").val()
@@ -42,6 +41,7 @@ $("#text").keydown(function(keyDown) {
       goForward(100);
     }
     else if (isCircle > 0) {
+      goForward(200)
     for(x = 0; x < 360; x = x+1) {
       turn1Left()
       goForward(1) 
