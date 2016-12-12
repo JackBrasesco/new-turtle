@@ -1,20 +1,19 @@
 var drawable = 2;
 
 $(document).keydown(function(keyPress) {
-  //  console.log(keyPress)
-//  if (keyPress.keyCode == 67) {
-//    if (drawable == 2) {
-//      console.log("swithicnon", drawable)
-//      drawable = 1
-//    }
-//    if (drawable == 1) {
-//      console.log("swithin off", drawable)
-//      drawable = 2
-//      console.log("wsishic offfff", drawable)
-//    }
-//  }
-//  console.log(drawable)
-//  if (drawable == 1) {
+  if (keyPress.keyCode == 67) {
+    if (drawable == 2) {
+      console.log("swithicnon", drawable)
+      drawable = 1
+    }
+    if (drawable == 1) {
+      console.log("swithin off", drawable)
+      drawable = 2
+      console.log("wsishic offfff", drawable)
+    }
+  }
+  console.log(drawable)
+  if (drawable == 1) {
     if (keyPress.keyCode == 87) {
       lookUp()
       goForward(10)
@@ -31,7 +30,7 @@ $(document).keydown(function(keyPress) {
       lookDown()
       goForward(10)
     }
-//  }
+  }
 })
 $("#text").keydown(function(keyDown) {
   if (keyDown.keyCode == 13) {
