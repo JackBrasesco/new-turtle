@@ -35,7 +35,7 @@ function turn1Left() {
   heading = heading - 1
 }
 
-function goForward(distance) {    
+function goForward(distance, draw?) {    
   var radians = -1 * heading * (Math.PI/180);
   var yIncrement = Math.sin(radians) * distance;
   var xIncrement = Math.cos(radians) * distance;        
@@ -51,8 +51,10 @@ function goForward(distance) {
     bottom: position.y,
   },{
     duration: 5,
+    if (draw? == "true") {
     complete : function() {
       insertLine(origPosition, origHeading, distance)
+    }
     }
   })
 

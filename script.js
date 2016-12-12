@@ -5,8 +5,7 @@ $(document).keydown(function(keyPress) {
     if (drawable == 2) {
       console.log("swithicnon", drawable)
       drawable = 1
-    }
-    if (drawable == 1) {
+    } else {
       console.log("swithin off", drawable)
       drawable = 2
       console.log("wsishic offfff", drawable)
