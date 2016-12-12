@@ -1,3 +1,38 @@
+var drawable = 0;
+
+$(document).keydown(function(keyPress) {
+  //  console.log(keyPress)
+  if (keyPress.keyCode == 67) {
+    if (drawable == 0) {
+      console.log("swithicnon", drawable)
+      drawable = 1
+    }
+    if (drawable == 1) {
+      console.log("swithin off", drawable)
+      drawable = 0
+      console.log("wsishic offfff", drawable)
+    }
+  }
+  console.log(drawable)
+  if (drawable == 1) {
+    if (keyPress.keyCode == 87) {
+      faceDown()
+      goForward(10)
+    }
+    if (keyPress.keyCode == 68) {
+      faceRight()
+      goForward(10)
+    }
+    if (keyPress.keyCode == 65) {
+      faceLeft()
+      goForward(10)
+    }
+    if (keyPress.keyCode == 83) {
+      faceUp()
+      goForward(10)
+    }
+  }
+})
 $("#text").keydown(function(keyDown) {
   if (keyDown.keyCode == 13) {
     var whatToDraw = $("#text").val()
@@ -42,10 +77,10 @@ $("#text").keydown(function(keyDown) {
     }
     else if (isCircle > 0) {
       goForward(200)
-    for(x = 0; x < 360; x = x+1) {
-      turnLeft(2)
-      goForward(1) 
-    }
+      for(x = 0; x < 360; x = x+1) {
+        turnLeft(1)
+        goForward(1) 
+      }
     }
   }
 })
