@@ -4,7 +4,16 @@ var turtle = $("#turtle");
 var turtleCage = $(".turtle-cage")
 
 function lookUp() {
-  
+ heading = 270
+}
+function lookDown() {
+ heading = 90
+}
+function lookRight() {
+ heading = 0
+}
+function lookLeft() {
+ heading = 180
 }
 function turnRight() {
   heading = heading + 90  
