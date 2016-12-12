@@ -16,19 +16,19 @@ $(document).keydown(function(keyPress) {
 //  console.log(drawable)
 //  if (drawable == 1) {
     if (keyPress.keyCode == 87) {
-      faceDown()
+      lookUp()
       goForward(10)
     }
     if (keyPress.keyCode == 68) {
-      faceRight()
+      lookRight()
       goForward(10)
     }
     if (keyPress.keyCode == 65) {
-      faceLeft()
+      lookLeft()
       goForward(10)
     }
     if (keyPress.keyCode == 83) {
-      faceUp()
+      lookDown()
       goForward(10)
     }
 //  }
